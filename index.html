@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLAME | Rooftop Open Flame Dining - Ayer Itam, Penang</title>
+<meta name="description" content="Penang's first open flame rooftop dining experience. Premium steaks, flame-grilled seafood, and stunning views of Kek Lok Si Temple. Halal friendly, pork-free.">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://flamerestaurant.my">
+
+<!-- Open Graph / Social Sharing -->
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="FLAME | Rooftop Open Flame Dining - Ayer Itam, Penang">
+<meta property="og:description" content="Penang's first open flame rooftop dining experience. Premium steaks, flame-grilled seafood, and stunning views of Kek Lok Si Temple.">
+<meta property="og:url" content="https://flamerestaurant.my">
+<meta property="og:site_name" content="Flame Restaurant">
+<meta property="og:locale" content="en_MY">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0f0f'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-size='20' font-weight='bold' fill='%23E8721C' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Flame Restaurant",
+  "image": "https://flamerestaurant.my/images/flame-og.jpg",
+  "url": "https://flamerestaurant.my",
+  "telephone": "+60103831427",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rooftop, De View Hotel, 18 Jalan Pasar, Pekan Ayer Itam",
+    "addressLocality": "Ayer Itam",
+    "addressRegion": "Penang",
+    "postalCode": "11500",
+    "addressCountry": "MY"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 5.4016061,
+    "longitude": 100.277419
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "12:00",
+      "closes": "23:00"
+    }
+  ],
+  "servesCuisine": ["Steakhouse", "Grilled Seafood", "Western"],
+  "priceRange": "RM 30 - RM 150",
+  "acceptsReservations": "True",
+  "menu": "https://flamerestaurant.my/#menu"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ========== CSS VARIABLES ========== */
+:root {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1715;
+  --bg-card: #1e1b18;
+  --bg-elevated: #252220;
+  --flame-orange: #E8721C;
+  --flame-amber: #D4872C;
+  --ember-red: #9B3A1C;
+  --ember-deep: #6B2510;
+  --gold: #C9A96E;
+  --gold-light: #D4BC8A;
+  --cream: #F5F0E8;
+  --cream-dim: #B8B0A4;
+  --cream-muted: #7A756D;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Outfit', system-ui, sans-serif;
+}
+
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  font-size: 16px;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ========== UTILITY ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--flame-orange);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-label::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--flame-orange);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.15;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.body-text {
+  font-size: 0.95rem;
+  color: var(--cream-dim);
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+/* ========== CTA BUTTONS ========== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: var(--flame-orange);
+  color: var(--bg-primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-primary:hover {
+  background: #f07d28;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(232, 114, 28, 0.3);
+}
+
+.btn-primary:hover::before { opacity: 1; }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  background: transparent;
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid rgba(201, 169, 110, 0.4);
+  transition: all 0.4s;
+}
+
+.btn-outline:hover {
+  border-color: var(--gold);
+  background: rgba(201, 169, 110, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ========== NAVIGATION ========== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: all 0.4s;
+}
+
+.nav.scrolled {
+  background: rgba(15, 15, 15, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(232, 114, 28, 0.1);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--cream);
+}
+
+.nav-logo span { color: var(--flame-orange); }
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+  transition: color 0.3s;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--flame-orange);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover { color: var(--cream); }
+.nav-links a:hover::after { width: 100%; }
+
+.nav-reserve {
+  padding: 10px 24px;
+  background: var(--flame-orange);
+  color: var(--bg-primary);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.nav-reserve:hover {
+  background: #f07d28;
+  box-shadow: 0 8px 30px rgba(232, 114, 28, 0.3);
+}
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+}
+
+.nav-hamburger span {
+  width: 24px;
+  height: 1.5px;
+  background: var(--cream);
+  transition: all 0.3s;
+}
+
+/* Mobile Nav */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.98);
+  backdrop-filter: blur(30px);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.mobile-menu.active {
+  display: flex;
+  opacity: 1;
+}
+
+.mobile-menu a {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--cream);
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+
+.mobile-menu a:hover { color: var(--flame-orange); }
+
+.mobile-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 1.6rem;
+  color: var(--cream);
+  padding: 8px;
+}
+
+/* ========== HERO ========== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 80%, rgba(155, 58, 28, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 20%, rgba(232, 114, 28, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(107, 37, 16, 0.1) 0%, transparent 70%),
+    var(--bg-primary);
+}
+
+.hero-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+}
+
+.hero-embers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ember {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--flame-orange);
+  opacity: 0;
+  animation: ember-rise linear infinite;
+}
+
+@keyframes ember-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  10% { opacity: 0.8; }
+  70% { opacity: 0.3; }
+  100% {
+    opacity: 0;
+    transform: translateY(-100vh) scale(0.3);
+  }
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 0 24px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 20px;
+  border: 1px solid rgba(201, 169, 110, 0.3);
+  margin-bottom: 40px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  animation: fadeInDown 1s 0.2s both;
+}
+
+.hero-badge::before,
+.hero-badge::after {
+  content: '✦';
+  font-size: 0.5rem;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(4rem, 14vw, 10rem);
+  letter-spacing: 0.25em;
+  line-height: 1;
+  color: var(--cream);
+  margin-bottom: 16px;
+  animation: fadeInUp 1s 0.4s both;
+  text-shadow: 0 0 120px rgba(232, 114, 28, 0.15);
+}
+
+.hero-tagline {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--gold-light);
+  margin-bottom: 8px;
+  animation: fadeInUp 1s 0.6s both;
+}
+
+.hero-sub {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  margin-bottom: 48px;
+  animation: fadeInUp 1s 0.8s both;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s 1s both;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--cream-muted);
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  animation: fadeInUp 1s 1.2s both;
+}
+
+.hero-scroll-line {
+  width: 1px;
+  height: 48px;
+  background: linear-gradient(to bottom, var(--flame-orange), transparent);
+  animation: scroll-pulse 2s infinite;
+}
+
+@keyframes scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========== ABOUT ========== */
+.about {
+  padding: 140px 0;
+  position: relative;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-image-stack {
+  position: relative;
+  height: 520px;
+}
+
+.about-img {
+  position: absolute;
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(232, 114, 28, 0.03), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-img-1 {
+  width: 300px;
+  height: 380px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.about-img-2 {
+  width: 260px;
+  height: 320px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.about-img-accent {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(232, 114, 28, 0.2);
+  top: -20px;
+  right: 40%;
+}
+
+.about-features {
+  display: flex;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+}
+
+.about-feature-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--flame-orange);
+  border-radius: 50%;
+}
+
+/* ========== MENU / SIGNATURE DISHES ========== */
+.menu {
+  padding: 140px 0;
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(232, 114, 28, 0.2), transparent);
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.menu-header .body-text {
+  margin: 0 auto;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.menu-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 169, 110, 0.06);
+  padding: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-card:hover {
+  border-color: rgba(232, 114, 28, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.menu-card-img {
+  width: 100%;
+  height: 200px;
+  background: var(--bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  color: var(--cream-muted);
+  letter-spacing: 0.05em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-card-img img {
+  transform: scale(1.08);
+}
+
+.menu-card-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top, var(--bg-card), transparent);
+}
+
+.menu-card-body {
+  padding: 24px;
+}
+
+.menu-card-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.menu-card-desc {
+  font-size: 0.8rem;
+  color: var(--cream-muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.menu-card-price {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--flame-orange);
+}
+
+.menu-card-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(232, 114, 28, 0.9);
+  color: var(--bg-primary);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  z-index: 2;
+}
+
+.menu-note {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--cream-muted);
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.menu-cta {
+  text-align: center;
+}
+
+/* ========== SEPARATOR ========== */
+.flame-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 0;
+  color: var(--flame-orange);
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  opacity: 0.5;
+}
+
+.flame-divider::before,
+.flame-divider::after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--flame-orange));
+}
+
+.flame-divider::after {
+  background: linear-gradient(to left, transparent, var(--flame-orange));
+}
+
+/* ========== DOME EXPERIENCE ========== */
+.dome {
+  padding: 140px 0;
+  position: relative;
+}
+
+.dome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.dome-image {
+  height: 480px;
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--cream-muted);
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.dome-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dome-image::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, rgba(232, 114, 28, 0.15), transparent 40%, transparent 60%, rgba(201, 169, 110, 0.1));
+  z-index: -1;
+  padding: 1px;
+}
+
+.dome-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.dome-feat {
+  padding: 20px;
+  border-left: 2px solid var(--ember-red);
+}
+
+.dome-feat-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+
+.dome-feat-text {
+  font-size: 0.78rem;
+  color: var(--cream-muted);
+}
+
+/* ========== THE VIEW ========== */
+.view {
+  padding: 140px 0;
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.view::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(232, 114, 28, 0.2), transparent);
+}
+
+.view-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.view-header .body-text { margin: 0 auto; }
+
+.view-panorama {
+  width: 100%;
+  height: 400px;
+  background: var(--bg-card);
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: var(--cream-muted);
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.view-panorama img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.view-stats {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  margin-top: 60px;
+}
+
+.view-stat {
+  text-align: center;
+}
+
+.view-stat-number {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--flame-orange);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.view-stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+}
+
+/* ========== PRACTICAL INFO ========== */
+.info {
+  padding: 140px 0;
+  position: relative;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.info-item {
+  display: flex;
+  gap: 20px;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(232, 114, 28, 0.3);
+  color: var(--flame-orange);
+  font-size: 1rem;
+}
+
+.info-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--flame-orange);
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 0.92rem;
+  color: var(--cream);
+  line-height: 1.6;
+}
+
+.info-value a {
+  color: var(--gold);
+  transition: color 0.3s;
+}
+
+.info-value a:hover { color: var(--flame-orange); }
+
+.info-map {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  border: 1px solid rgba(201, 169, 110, 0.1);
+  overflow: hidden;
+}
+
+.info-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: brightness(0.7) contrast(1.1) saturate(0);
+  transition: filter 0.4s;
+}
+
+.info-map:hover iframe {
+  filter: brightness(0.8) contrast(1) saturate(0.3);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  padding: 60px 0 40px;
+  background: var(--bg-secondary);
+  border-top: 1px solid rgba(201, 169, 110, 0.06);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--cream);
+}
+
+.footer-brand span { color: var(--flame-orange); }
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201, 169, 110, 0.15);
+  color: var(--cream-dim);
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+
+.footer-social:hover {
+  border-color: var(--flame-orange);
+  color: var(--flame-orange);
+  background: rgba(232, 114, 28, 0.05);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(201, 169, 110, 0.06);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.72rem;
+  color: var(--cream-muted);
+}
+
+/* ========== SCROLL ANIMATIONS ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 900px) {
+  .nav-links, .nav-reserve { display: none; }
+  .nav-hamburger { display: flex; }
+
+  .about-grid,
+  .dome-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-image-stack {
+    height: 360px;
+  }
+
+  .about-img-1 { width: 240px; height: 300px; }
+  .about-img-2 { width: 200px; height: 260px; }
+
+  .view-stats { gap: 32px; flex-wrap: wrap; }
+
+  .dome-features { grid-template-columns: 1fr; }
+
+  .menu-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .hero-name { letter-spacing: 0.15em; }
+
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary, .btn-outline {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .about-image-stack {
+    height: 300px;
+  }
+
+  .about-img-1 { width: 200px; height: 260px; }
+  .about-img-2 { width: 180px; height: 220px; }
+  .about-features { flex-direction: column; gap: 16px; }
+
+  .menu-grid { grid-template-columns: 1fr; }
+
+  .dome-image { height: 300px; }
+
+  .view-panorama { height: 240px; }
+  .view-stats { flex-direction: column; align-items: center; }
+
+  .info-map { min-height: 300px; }
+
+  .footer-inner { flex-direction: column; text-align: center; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+/* ========== SKIP TO CONTENT ========== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  background: var(--flame-orange);
+  color: var(--bg-primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  z-index: 9999;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* ========== DEMO IMAGE BADGES ========== */
+.about-img::after,
+.menu-card-img::after,
+.dome-image::after,
+.view-panorama::after {
+  content: 'Demo Image';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  background: rgba(232, 114, 28, 0.85);
+  color: var(--bg-primary);
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.menu-card-img::after {
+  top: auto;
+  bottom: 70px;
+}
+
+/* ========== BACK TO TOP ========== */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background: var(--bg-card);
+  border: 1px solid rgba(232, 114, 28, 0.3);
+  color: var(--flame-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 900;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--flame-orange);
+  color: var(--bg-primary);
+  transform: translateY(-4px);
+}
+
+/* ========== INSTAGRAM GALLERY ========== */
+.instagram {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.instagram::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(232, 114, 28, 0.2), transparent);
+}
+
+.instagram-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  margin-bottom: 40px;
+}
+
+.instagram-item {
+  aspect-ratio: 1;
+  background: var(--bg-card);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.instagram-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.instagram-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(232, 114, 28, 0);
+  z-index: 1;
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.instagram-item:hover::before {
+  background: rgba(232, 114, 28, 0.2);
+}
+
+.instagram-item:hover img {
+  transform: scale(1.08);
+}
+
+.instagram-cta {
+  text-align: center;
+}
+
+.instagram-handle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #833AB4, #FD1D1D, #F77737);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  transition: all 0.3s;
+}
+
+.instagram-handle:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(232, 114, 28, 0.3);
+}
+
+.instagram-handle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ========== SOCIAL PROOF ========== */
+.social-proof {
+  padding: 80px 0;
+  background: var(--bg-primary);
+  text-align: center;
+}
+
+.social-proof-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: rgba(232, 114, 28, 0.1);
+  border: 1px solid rgba(232, 114, 28, 0.2);
+  margin-bottom: 24px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--flame-orange);
+}
+
+.social-proof-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 16px;
+}
+
+.social-proof-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.social-proof-subtitle {
+  font-size: 0.9rem;
+  color: var(--cream-muted);
+  margin-bottom: 40px;
+}
+
+.proof-stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.proof-stat {
+  text-align: center;
+}
+
+.proof-stat-number {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--flame-orange);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.proof-stat-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+}
+
+/* ========== FEATURED BADGE ========== */
+.featured-strip {
+  background: var(--bg-card);
+  border-top: 1px solid rgba(201, 169, 110, 0.08);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.08);
+  padding: 24px 0;
+  text-align: center;
+}
+
+.featured-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cream-muted);
+  margin-bottom: 16px;
+}
+
+.featured-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  opacity: 0.6;
+}
+
+.featured-logo {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cream-dim);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proof-stats {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proof-stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .featured-logos {
+    gap: 24px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Skip to Content Link -->
+<a href="#about" class="skip-link">Skip to main content</a>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">FL<span>A</span>ME</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#dome">Dome</a></li>
+      <li><a href="#view">The View</a></li>
+      <li><a href="#info">Visit</a></li>
+      <li><a href="https://www.instagram.com/flame.restaurantpg/" target="_blank" rel="noopener" style="color: var(--flame-orange);">@Instagram</a></li>
+    </ul>
+    <a href="https://wa.me/60103831427" class="nav-reserve" target="_blank" rel="noopener">Reserve</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#menu" class="mobile-link">Menu</a>
+  <a href="#dome" class="mobile-link">Dome</a>
+  <a href="#view" class="mobile-link">The View</a>
+  <a href="#info" class="mobile-link">Visit</a>
+  <a href="https://www.instagram.com/flame.restaurantpg/" target="_blank" rel="noopener" class="mobile-link">@Instagram</a>
+  <a href="https://wa.me/60103831427" target="_blank" rel="noopener" class="mobile-link" style="color: var(--flame-orange);">Reserve a Table</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-embers" id="embers"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">Rooftop Open Flame Dining</div>
+    <h1 class="hero-name">FLAME</h1>
+    <p class="hero-tagline">Best Steak with Best View in Penang</p>
+    <p class="hero-sub">De View Hotel &nbsp;·&nbsp; Ayer Itam</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/60103831427" class="btn-primary" target="_blank" rel="noopener">
+        Reserve a Table
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#menu" class="btn-outline">View Menu</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-stack reveal">
+        <div class="about-img about-img-1">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80" alt="Rooftop dining ambiance at dusk" loading="lazy">
+        </div>
+        <div class="about-img about-img-2">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Open flame grill cooking" loading="lazy">
+        </div>
+        <div class="about-img-accent"></div>
+      </div>
+
+      <div>
+        <div class="section-label reveal">Our Story</div>
+        <h2 class="section-title reveal reveal-delay-1">Penang's First<br><em>Open Flame</em> Dining</h2>
+        <p class="body-text reveal reveal-delay-2">
+          Perched high atop De View Hotel in Ayer Itam, Flame is a rooftop restaurant that redefines dining with a view. Every dish is a celebration of smoky aromas and flame-grilled perfection, crafted over an open fire with carefully sourced ingredients.
+        </p>
+        <br>
+        <p class="body-text reveal reveal-delay-3">
+          From aged steaks to fresh seafood, our kitchen delivers bold flavours against a stunning backdrop of Kek Lok Si Temple and the Penang Hill skyline. Whether you're celebrating a special occasion or simply craving a memorable meal, Flame is where the evening comes alive.
+        </p>
+
+        <div class="about-features reveal reveal-delay-4">
+          <div class="about-feature">
+            <div class="about-feature-dot"></div>
+            Pork-Free Kitchen
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-dot"></div>
+            Halal Friendly
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-dot"></div>
+            Alcohol-Free
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MENU ========== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="menu-header">
+      <div class="section-label reveal" style="justify-content: center;">
+        <span style="display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:var(--flame-orange);"></span>Signature Dishes</span>
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">Flame-Grilled <em>Perfection</em></h2>
+      <p class="body-text reveal reveal-delay-2">
+        Every dish tells a story of fire and flavour. Our menu celebrates premium cuts, fresh seafood, and unexpected local touches.
+      </p>
+    </div>
+
+    <div class="menu-grid">
+      <!-- Card 1 -->
+      <div class="menu-card reveal">
+        <div class="menu-card-img">
+          <span class="menu-card-tag">Signature</span>
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80" alt="Flame-seared Black Angus steak" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Flaming Australian Black Angus Beef</h3>
+          <p class="menu-card-desc">Premium imported Black Angus, flame-seared and served sizzling</p>
+          <div class="menu-card-price">RM 89</div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="menu-card reveal reveal-delay-1">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Sizzling Wagyu butter rice" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Sizzling Cheesy Wagyu Butter Rice</h3>
+          <p class="menu-card-desc">Wagyu hamburg on buttered rice with melted cheese and sweet corn</p>
+          <div class="menu-card-price">RM 49</div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="menu-card reveal reveal-delay-2">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?w=600&q=80" alt="Charcoal grilled tiger prawns" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Charcoal Grilled Tiger Prawn</h3>
+          <p class="menu-card-desc">Fresh tiger prawns kissed by charcoal flames, served with garlic butter</p>
+          <div class="menu-card-price">RM 45</div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="menu-card reveal reveal-delay-3">
+        <div class="menu-card-img">
+          <span class="menu-card-tag">Popular</span>
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Flame smoky satay chicken" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Flame Smoky Satay Chicken</h3>
+          <p class="menu-card-desc">Quarter chicken marinated in satay spices with Sriracha-peanut sauce blend</p>
+          <div class="menu-card-price">RM 32</div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="menu-card reveal">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1615937722923-67f6deaf2cc9?w=600&q=80" alt="Tomahawk steak presentation" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Tomahawk Steak</h3>
+          <p class="menu-card-desc">A showstopping bone-in ribeye, perfect for sharing. Flame-grilled to order</p>
+          <div class="menu-card-price">Market Price</div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="menu-card reveal reveal-delay-1">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80" alt="Slow-braised lamb shank" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Slow-Braised Lamb Shank</h3>
+          <p class="menu-card-desc">Fall-off-the-bone lamb shank braised to tender perfection</p>
+          <div class="menu-card-price">RM 55</div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="menu-card reveal reveal-delay-2">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=600&q=80" alt="Brioche with truffle butter and seafood" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Brioche Bakar with Truffle Butter</h3>
+          <p class="menu-card-desc">Toasted brioche with 3 prawns, 4 mussels, and truffle butter</p>
+          <div class="menu-card-price">RM 21</div>
+        </div>
+      </div>
+
+      <!-- Card 8 - Dessert -->
+      <div class="menu-card reveal reveal-delay-3">
+        <div class="menu-card-img">
+          <span class="menu-card-tag">Must Try</span>
+          <img src="https://images.unsplash.com/photo-1470324161839-ce2bb6fa6bc3?w=600&q=80" alt="Durian crème brûlée" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Kek Lok Si Durian Crème Brûlée</h3>
+          <p class="menu-card-desc">Our signature dessert: durian-infused crème brûlée served in a real durian husk</p>
+          <div class="menu-card-price">RM 23</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flame-divider">✦</div>
+
+    <!-- Drinks row -->
+    <div class="menu-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); max-width: 600px; margin: 0 auto 40px;">
+      <div class="menu-card reveal">
+        <div class="menu-card-img" style="height: 140px;">
+          <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80" alt="Aladdin Tea served in lamp" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Aladdin Tea</h3>
+          <p class="menu-card-desc">Signature hot tea with a theatrical presentation</p>
+          <div class="menu-card-price">RM 28</div>
+        </div>
+      </div>
+      <div class="menu-card reveal reveal-delay-1">
+        <div class="menu-card-img" style="height: 140px;">
+          <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600&q=80" alt="Flaming Bubble cocktail with smoke" loading="lazy">
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Flaming Bubble</h3>
+          <p class="menu-card-desc">A smoky, dramatic non-alcoholic bubble drink</p>
+          <div class="menu-card-price">RM 24</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="menu-note">All prices subject to 10% service charge and 6% SST</p>
+    <div class="menu-cta">
+      <a href="#menu" class="btn-outline reveal" onclick="document.querySelector('.menu-header').scrollIntoView({behavior:'smooth'}); return false;">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DOME EXPERIENCE ========== -->
+<section class="dome" id="dome">
+  <div class="container">
+    <div class="dome-grid">
+      <div>
+        <div class="section-label reveal">Private Dining</div>
+        <h2 class="section-title reveal reveal-delay-1">The <em>Dome</em><br>Experience</h2>
+        <p class="body-text reveal reveal-delay-2">
+          Elevate your celebration with our exclusive private igloo domes on the rooftop terrace. Surrounded by panoramic views and the glow of fairy lights, each dome offers an intimate setting for birthdays, anniversaries, and gatherings.
+        </p>
+
+        <div class="dome-features reveal reveal-delay-3">
+          <div class="dome-feat">
+            <div class="dome-feat-title">8+ Guests</div>
+            <div class="dome-feat-text">Perfect for group celebrations</div>
+          </div>
+          <div class="dome-feat">
+            <div class="dome-feat-title">Complimentary</div>
+            <div class="dome-feat-text">No extra charge for dome seating</div>
+          </div>
+          <div class="dome-feat">
+            <div class="dome-feat-title">Climate Cooled</div>
+            <div class="dome-feat-text">Equipped with coolers for comfort</div>
+          </div>
+          <div class="dome-feat">
+            <div class="dome-feat-title">Reservation Only</div>
+            <div class="dome-feat-text">Call ahead to secure your dome</div>
+          </div>
+        </div>
+
+        <br><br>
+        <a href="https://wa.me/60103831427?text=Hi%2C%20I'd%20like%20to%20book%20the%20private%20dome%20for%20a%20celebration" class="btn-primary reveal reveal-delay-4" target="_blank" rel="noopener">
+          Book Your Dome
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="dome-image reveal">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Private dining dome with fairy lights at night" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== THE VIEW ========== -->
+<section class="view" id="view">
+  <div class="container">
+    <div class="view-header">
+      <div class="section-label reveal" style="justify-content: center;">
+        <span style="display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:var(--flame-orange);"></span>The View</span>
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">Dine <em>Above</em> the City</h2>
+      <p class="body-text reveal reveal-delay-2">
+        As the sun sets over Ayer Itam, the rooftop transforms into a glowing sanctuary. Watch the Kek Lok Si Temple lights illuminate the hillside while you savour every bite.
+      </p>
+    </div>
+
+    <div class="view-panorama reveal">
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&q=80" alt="Panoramic rooftop view at golden hour" loading="lazy">
+    </div>
+
+    <div class="view-stats">
+      <div class="view-stat reveal">
+        <div class="view-stat-number">7F</div>
+        <div class="view-stat-label">Rooftop Level</div>
+      </div>
+      <div class="view-stat reveal reveal-delay-1">
+        <div class="view-stat-number">360°</div>
+        <div class="view-stat-label">Panoramic Views</div>
+      </div>
+      <div class="view-stat reveal reveal-delay-2">
+        <div class="view-stat-number">0.5km</div>
+        <div class="view-stat-label">From Kek Lok Si</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SOCIAL PROOF ========== -->
+<section class="social-proof">
+  <div class="container">
+    <div class="social-proof-badge reveal">🔥 Fully Booked Most Weekends</div>
+    <h2 class="social-proof-title reveal reveal-delay-1">Penang's Most <em>Sought-After</em> Table</h2>
+    <p class="social-proof-subtitle reveal reveal-delay-2">Join thousands who've discovered the best steak with the best view in Penang</p>
+
+    <div class="proof-stats">
+      <div class="proof-stat reveal">
+        <div class="proof-stat-number">5,600+</div>
+        <div class="proof-stat-label">Instagram Followers</div>
+      </div>
+      <div class="proof-stat reveal reveal-delay-1">
+        <div class="proof-stat-number">183+</div>
+        <div class="proof-stat-label">Posts & Reels</div>
+      </div>
+      <div class="proof-stat reveal reveal-delay-2">
+        <div class="proof-stat-number">4.8★</div>
+        <div class="proof-stat-label">Google Rating</div>
+      </div>
+      <div class="proof-stat reveal reveal-delay-3">
+        <div class="proof-stat-number">Full</div>
+        <div class="proof-stat-label">House Every Weekend</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRACTICAL INFO ========== -->
+<section class="info" id="info">
+  <div class="container">
+    <div class="section-label reveal">Find Us</div>
+    <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 60px;">Plan Your <em>Visit</em></h2>
+
+    <div class="info-grid">
+      <div class="info-details">
+        <div class="info-item reveal">
+          <div class="info-icon">⚲</div>
+          <div>
+            <div class="info-label">Address</div>
+            <div class="info-value">
+              Rooftop, De View Hotel<br>
+              18 Jalan Pasar, Pekan Ayer Itam<br>
+              11500 Pulau Pinang, Malaysia
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item reveal reveal-delay-1">
+          <div class="info-icon">⏱</div>
+          <div>
+            <div class="info-label">Opening Hours</div>
+            <div class="info-value">
+              Lunch: 12:00 PM – 3:00 PM<br>
+              Tea Time: 3:00 PM – 6:00 PM<br>
+              Dinner: 6:00 PM – 11:00 PM<br>
+              <strong style="color: var(--flame-orange);">Closed every Wednesday</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item reveal reveal-delay-2">
+          <div class="info-icon">☎</div>
+          <div>
+            <div class="info-label">Reservation</div>
+            <div class="info-value">
+              <a href="tel:+60103831427">010-383 1427</a><br>
+              <a href="https://wa.me/60103831427" target="_blank" rel="noopener">WhatsApp Us →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-item reveal reveal-delay-3">
+          <div class="info-icon">✦</div>
+          <div>
+            <div class="info-label">Good to Know</div>
+            <div class="info-value">
+              Walk-ins welcome, but reservations recommended<br>
+              Paid parking available nearby<br>
+              Pork-free · Alcohol-free · Halal friendly
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-map reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1989.5!2d100.277419!3d5.4016061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac3597f8dcab5%3A0xf963676252801b8d!2sFlame%20Restaurant!5e0!3m2!1sen!2smy!4v1700000000000!5m2!1sen!2smy"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Flame Restaurant location on Google Maps"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== INSTAGRAM GALLERY ========== -->
+<section class="instagram" id="instagram">
+  <div class="container">
+    <div class="instagram-header">
+      <div class="section-label reveal" style="justify-content: center;">
+        <span style="display:flex;align-items:center;gap:12px;"><span style="width:32px;height:1px;background:var(--flame-orange);"></span>Follow Our Journey</span>
+      </div>
+      <h2 class="section-title reveal reveal-delay-1">See What's <em>Sizzling</em></h2>
+    </div>
+
+    <div class="instagram-grid">
+      <div class="instagram-item reveal">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Flame grilled steak" loading="lazy">
+      </div>
+      <div class="instagram-item reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=400&q=80" alt="Rooftop dining view" loading="lazy">
+      </div>
+      <div class="instagram-item reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400&q=80" alt="Fire cooking flames" loading="lazy">
+      </div>
+      <div class="instagram-item reveal reveal-delay-3">
+        <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=400&q=80" alt="Premium steak plating" loading="lazy">
+      </div>
+      <div class="instagram-item reveal">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80" alt="Restaurant ambiance" loading="lazy">
+      </div>
+      <div class="instagram-item reveal reveal-delay-1">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&q=80" alt="Tomahawk steak" loading="lazy">
+      </div>
+    </div>
+
+    <div class="instagram-cta">
+      <a href="https://www.instagram.com/flame.restaurantpg/" target="_blank" rel="noopener" class="instagram-handle reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        @flame.restaurantpg
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FEATURED STRIP ========== -->
+<div class="featured-strip">
+  <div class="container">
+    <p class="featured-label reveal">As Featured On</p>
+    <div class="featured-logos reveal reveal-delay-1">
+      <span class="featured-logo">Donde Comer Malasia</span>
+      <span class="featured-logo">Penang Foodie</span>
+      <span class="featured-logo">KL Foodie</span>
+      <span class="featured-logo">Google Maps</span>
+    </div>
+  </div>
+</div>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">FL<span>A</span>ME</div>
+
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/flame.restaurantpg/" target="_blank" rel="noopener" class="footer-social" aria-label="Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61562600146465" target="_blank" rel="noopener" class="footer-social" aria-label="Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/60103831427" target="_blank" rel="noopener" class="footer-social" aria-label="WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.121 1.523 5.857L.06 23.524l5.831-1.53A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.82c-1.964 0-3.833-.529-5.47-1.53l-.392-.233-4.065 1.066 1.084-3.961-.256-.406A9.818 9.818 0 0 1 2.18 12c0-5.422 4.398-9.82 9.82-9.82 5.422 0 9.82 4.398 9.82 9.82 0 5.422-4.398 9.82-9.82 9.82z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Flame Restaurant. All Rights Reserved.</span>
+      <span>Pork-Free · Halal Friendly · Alcohol-Free</span>
+    </div>
+    <p style="text-align: center; margin-top: 16px; font-size: 0.65rem; color: var(--cream-muted); letter-spacing: 0.1em;">
+      Official Website · flamerestaurant.my
+    </p>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+// Navbar scroll effect & Back to top visibility
+const nav = document.getElementById('nav');
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  nav.classList.toggle('scrolled', currentScroll > 60);
+  backToTop.classList.toggle('visible', currentScroll > 400);
+});
+
+// Back to top click handler
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileClose = document.getElementById('mobileClose');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.add('active');
+  document.body.style.overflow = 'hidden';
+});
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+mobileClose.addEventListener('click', closeMobileMenu);
+mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+// Ember particles
+const embersContainer = document.getElementById('embers');
+function createEmber() {
+  const ember = document.createElement('div');
+  ember.classList.add('ember');
+  const x = Math.random() * 100;
+  const size = Math.random() * 3 + 1;
+  const duration = Math.random() * 6 + 5;
+  const delay = Math.random() * 4;
+  const drift = (Math.random() - 0.5) * 100;
+
+  ember.style.left = x + '%';
+  ember.style.bottom = '-10px';
+  ember.style.width = size + 'px';
+  ember.style.height = size + 'px';
+  ember.style.animationDuration = duration + 's';
+  ember.style.animationDelay = delay + 's';
+  ember.style.filter = `blur(${Math.random() > 0.5 ? 1 : 0}px)`;
+  ember.style.background = Math.random() > 0.3
+    ? 'var(--flame-orange)'
+    : Math.random() > 0.5 ? 'var(--ember-red)' : 'var(--gold)';
+
+  embersContainer.appendChild(ember);
+
+  setTimeout(() => ember.remove(), (duration + delay) * 1000);
+}
+
+// Create initial embers then periodically
+for (let i = 0; i < 12; i++) createEmber();
+setInterval(createEmber, 800);
+
+// Scroll reveal
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
